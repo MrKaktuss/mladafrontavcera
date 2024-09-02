@@ -1,11 +1,8 @@
 ---
-title: "Záchody bez cenzury"
-slug: "zachody-bez-cenzury"
+title: "Ještě tu nic není"
+slug: "jeste-tu-nic-neni"
 author: "Já"
-publishedAt: 2024-04-10
-image: "https://cdn.pixabay.com/photo/2015/11/03/08/56/question-mark-1019820_1280.jpg"
+publishedAt: 2024-09-02
+image: "https://cdn.mos.cms.futurecdn.net/Wh46bS2Gw8vUC6iQh2wEd6-1200-80.png"
 ---
-Jak GYBON cenzuruje toalety, co je k tomu vede a kdo za tím stojí?
-
-# proč kokca?
-loremipsum
+Stále tu nic není, tak co tu hledáš?

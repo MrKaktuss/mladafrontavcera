@@ -1,0 +1,60 @@
+---
+import { getCollection } from "astro:content";
+import { postSchema } from "../../content/config";
+
+import Layout from "../../layouts/Layout.astro";
+
+import gsap from "gsap";
+
+// 1. Generate a new path for every collection entry
+export async function getStaticPaths() {
+  const postEntries = await getCollection("post");
+  return postEntries.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+
+// 2. For your template, you can get the entry directly from the prop
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+---
+
+<style>
+  article :global(*) {
+  }
+
+  article :global(h2) {
+    font-size: 26px;
+    @apply mt-8 font-semibold;
+    
+  }
+
+  article :global(p) {
+    font-size: 22px;
+    margin-top: 10px;
+    font-family: 'Montserrat';
+  }
+
+  article :global(img) {
+    @apply rounded-3xl w-full mx-auto my-10;
+  }
+
+</style>
+
+
+
+<Layout title={entry.data.title}>
+  <div class="max-w-3xl mx-auto">
+    <h1 class="text-5xl font-medium tracking-wide" id="article--title">{entry.data.title}</h1>
+    <div>
+      Napsal {entry.data.author}, {entry.data.publishedAt.toLocaleDateString()}
+    </div>
+    <hr class="mt-4" />
+
+    <article class="mt-4">
+      <Content />
+     </article>
+  </div>
+</Layout>
+

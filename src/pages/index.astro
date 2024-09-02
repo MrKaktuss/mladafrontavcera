@@ -1,0 +1,76 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+
+import { getCollection } from "astro:content";
+
+const allPosts = (await getCollection("post")).slice(0,2);
+---
+
+<Layout title="Welcome">
+	<div class="h-[calc(100vh-68px)]">
+		<div
+			class="flex text-left flex-col max-w-6xl mx-auto px-8 py-4 gap-2 justify-center -mt-10 h-full"
+		>
+			<h1 class="text-7xl text-center" id="hero--title">
+				Info ze včerejška, sračky z dneška
+			</h1>
+			<p class="text-xl mt-3 text-center">
+				Školní bulvár o kterém radši nikdo neslyšel. Vznikl jako odpor
+				proti gybonovinám, aby naše škola měla nějaké médium bez cenzury
+				a bez gramatických chyb.
+			</p>
+
+			<div class="self-center my-5">
+				<a
+					href="#newest"
+					type="button"
+					class="rounded-full bg-indigo-600 px-3.5 py-2 text-base font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+					>Číst</a
+				>
+				<a
+					href="https://gybonoviny.org/"
+					type="button"
+					class="rounded-full px-3.5 py-2 text-base font-semibold text-black hover:text-gray-500"
+					>Dneska ne :(</a
+				>
+			</div>
+		</div>
+	</div>
+	<div
+		class="min-h-screen flex flex-col w-full mx-auto justify-center max-w-5xl"
+		id="newest"
+	>
+		<h2  class="text-center text-5xl mb-8 font-bold">
+			Nejnovější články
+		</h2>
+
+		<div
+			class="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-12 max-w-5xl mx-auto"
+		>
+			{
+				allPosts.map((post) => (
+					<a href={"/posts/" + post.slug}>
+						<Card
+							title={post.data.title}
+							content={post.body}
+							image={post.data.image}
+						/>
+					</a>
+				))
+			}
+		</div>
+		<div class="flex justify-center mt-5">
+			<a
+				href="/all"
+				type="button"
+				class="rounded-full bg-indigo-600 px-3.5 py-2 text-base font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+				>Všechny články</a
+			>
+		</div>
+	</div>
+</Layout>
+
+<script>
+	gsap.from("#hero--title", {opacity: 0, y: -50, duration: 0.5});
+</script>

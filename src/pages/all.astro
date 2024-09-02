@@ -1,0 +1,26 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+
+import { getCollection } from "astro:content";
+
+const allPosts = await getCollection('post');
+---
+
+<Layout title="Články">
+    <div class="flex justify-center">
+        <h1 class="text-3xl font-bold">Všechny články</h1>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-12 max-w-5xl mx-auto">
+        
+        {allPosts.map((post) => (
+            <a href={"/posts/" + post.slug}>
+            <Card
+            title={post.data.title}
+            content={post.body}
+            image={post.data.image}
+        />
+        </a>
+        ))}
+    </div>
+</Layout>

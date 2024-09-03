@@ -15,7 +15,8 @@ import gsap from "gsap";
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
-    <meta name="description" content="Astro description"/>
+    <meta name="description" content="Noviny, který nečte ani naše babička."/>
+
     <meta name="viewport" content="width=device-width"/>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
     <meta name="generator" content={Astro.generator}/>
@@ -41,7 +42,7 @@ import gsap from "gsap";
         gtag('config', 'G-C8V9D89KLW');
     </script>
 
-    <title>{title}</title>
+    <title>{title} - Mladá Fronta Včera</title>
     <style is:global>
         :root {
             scroll-behavior: smooth;
@@ -54,6 +55,7 @@ import gsap from "gsap";
         h1, h2, h3, h4, h5, h6 {
             font-family: "Aktiv Grotesk";
             font-weight: 600;
+            @apply tracking-tight;
         }
 
 
@@ -146,7 +148,7 @@ import gsap from "gsap";
                 <div>Nečlánky</div>
             </div>--->
             </div>
-            <div id="smooth-wrapper" class="mt-10 px-5">
+            <div id="smooth-wrapper" class="mt-10 px-5 overflow-x-clip ">
                 <div id="smooth-content">
                     <slot/>
                 </div>

@@ -24,15 +24,15 @@ import gsap from "gsap";
 			src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/gsap.min.js"
 		></script>
 		<!-- Google tag (gtag.js) -->
+		// @ts-config
 		<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-C8V9D89KLW"></script>
+		// @ts-config
 		<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
-
 		gtag('config', 'G-C8V9D89KLW');
 		</script>
-
 		<title>{title}</title>
 		<style is:global>
 			:root {

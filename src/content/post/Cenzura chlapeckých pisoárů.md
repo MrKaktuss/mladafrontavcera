@@ -3,7 +3,7 @@ title: "Záchody bez cenzury!"
 slug: "zachody-bez-cenzury"
 author: "Julius Fučík"
 publishedAt: 2024-04-09
-image: "C:\Users\marek\OneDrive\Dokumenty\GitHub\mladafrontavcera\public\How-To-Unclog-A-Commercial-Urinal.png"
+image: "https://cdn.akoupelnyatopeni.cz/data/user-content/toilet-g79d169b58_1280.jpg"
 ---
 
 # Záchody bez cenzury!

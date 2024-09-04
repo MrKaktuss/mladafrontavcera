@@ -6,7 +6,7 @@ publishedAt: 2024-04-09
 image: "https://cdn.akoupelnyatopeni.cz/data/user-content/toilet-g79d169b58_1280.jpg"
 ---
 
-# Záchody bez cenzury!
+Cenzura chlapeckých pisoárů!
 Tento časopis zná cenzuru jako své boty. Ve jménu svobody slova a projevu se nám daří cenzurovat byť každé písmeno, které opustí hlavy našich zcela svobodných redaktorů.  Právě naše dobrá zkušenost s efektivitou a dobrým ohlasem na cenzuru nás dovedla k myšlence: proč tak skvělý systém neimplementovat i na chlapeckých toaletách?
 
 Tímto se ovšem dopouštíme hrubého plagiátorství. Nejsme totiž první, kdo se veřejně hlásí k instalaci cenzurního aparátu mezi klučičími pisoáry. Tato iniciativa vznikla v mozcích dnes již neznámé dvojce revolučně smýšlejících mladých mužů, když se u chlapských pisoárů oba postavili přímo vedle sebe, čímž navzájem narušili své intimní vzdálenosti. „Kéž by existovalo něco, čím bychom se mohli navzájem cenzurovat.“ Zde si dovolíme menší domněnku: odpověď na tuto filosoficky propracovanou otázku máte s velkou pravděpodobností přímo před očima – kus plastu. Efektivní fungování cenzury v minulosti vyžadovalo značné státní financování, dnešní nové technologie, jako je právě plast, nám však dovolují cenovku velmi snížit. Není tedy třeba následovat vzorný příklad hygienické špičky v podobě Pražského hlavního nádraží, kde lze nalézt luxusní bariery z porcelánu. Důrazně nedoporučujeme užití skla, jehož transparentnost by mohla mít fatální následky na prolétající ptactvo.

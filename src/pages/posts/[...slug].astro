@@ -22,18 +22,20 @@ const { Content } = await entry.render();
 
 <style>
   article :global(*) {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   }
 
   article :global(h2) {
     font-size: 26px;
     @apply mt-8 font-semibold;
-    
+
   }
 
   article :global(p) {
-    font-size: 22px;
-    margin-top: 10px;
-    font-family: 'Montserrat';
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 20px;
+    @apply sm:px-8;
   }
 
   article :global(img) {
@@ -46,8 +48,8 @@ const { Content } = await entry.render();
 
 <Layout title={entry.data.title}>
   <div class="max-w-3xl mx-auto">
-    <h1 class="text-5xl font-medium tracking-wide" id="article--title">{entry.data.title}</h1>
-    <div>
+    <h1 class="text-5xl font-medium tracking-tight" id="article--title">{entry.data.title}</h1>
+    <div class="mt-2">
       Napsal {entry.data.author}, {entry.data.publishedAt.toLocaleDateString()}
     </div>
     <hr class="mt-4" />

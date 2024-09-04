@@ -3,7 +3,7 @@ title: "Záchody bez cenzury!"
 slug: "zachody-bez-cenzury"
 author: "Julius Fučík"
 publishedAt: 2024-04-09
-image: "https://www.akoupelnyatopeni.cz/jak-vybrat-pisoar-px260533"
+image: "C:\Users\marek\OneDrive\Dokumenty\GitHub\mladafrontavcera\public\How-To-Unclog-A-Commercial-Urinal.png"
 ---
 
 # Záchody bez cenzury!

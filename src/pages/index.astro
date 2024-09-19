@@ -4,7 +4,8 @@ import Card from "../components/Card.astro";
 
 import {getCollection} from "astro:content";
 
-const allPosts = (await getCollection("post")).slice(0, 2);
+let allPosts = (await getCollection("post"));
+allPosts = allPosts.sort((a, b) => +b.data.publishedAt - +a.data.publishedAt).slice(0, 2);
 ---
 
 <Layout title="Hlavní strana">

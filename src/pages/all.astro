@@ -5,6 +5,8 @@ import Card from "../components/Card.astro";
 import { getCollection } from "astro:content";
 
 const allPosts = await getCollection('post');
+
+allPosts.sort((a, b) => +b.data.publishedAt - +a.data.publishedAt);
 ---
 
 <Layout title="Všechny články">

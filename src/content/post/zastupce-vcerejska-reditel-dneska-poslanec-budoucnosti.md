@@ -13,5 +13,7 @@ Mgr. Lehar se dal s prvním srpnovým dnem do práce a začal dělat změny mír
 Další změna se týká zájezdů do zahraničí. Díky programu Erasmus± se letos někam nepodíváme! Mezi dotčené akce patří například zájezd do Itálie s výtvarným a hudebním zaměřením, výlet do Würzburgu a další. Dle našich zdrojů (bakaláře) se nakonec na výběrový lyžařský kurz jede, za což děkujeme.
 
 Neposlední v řadě reforem na naší škole, kterou přinesl mandát nového ředitele, je Buddy systém. Tento fantastický program spojuje studenty vyšších ročníků s těmi mladšími, kteří ještě ani neví, jak najít správnou třídu, natož jak fungují tiskárny. Studenti kvint a kvart dostanou díky tomuto programu příležitost nahlédnout do života primánů, aby viděli, jak se mění generace, a mohli se podělit o své cenné zkušenosti. Tento experiment a jeho dopady budeme se zájmem sledovat a zároveň držet palce novým primánům.
+
 Můžeme jen polemizovat nad tím, jak se s revolučními reformami popasuje studentstvo a učitelský sbor, protože zde existuje také možnost, že by mohlo dojít k 1. hradecké defenestraci, což se zatím jeví jako velmi nepravděpodobné, ale stále možné. V případě úspěšnosti těchto reforem by mohl nastat zcela opačný případ, a to další kariérní růst v podobě role poslance. Kdyby se tak opravdu stalo, Pavel Lehar by následoval svého přítele Matěje Havla.
+
 Na závěr se opožděně přidáváme ke gratulacím panu Leharovi ke zvolení a přejeme úspěšnou a benevolentní vládu. Sláva řediteli, ať žije ředitel!

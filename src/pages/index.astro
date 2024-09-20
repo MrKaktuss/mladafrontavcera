@@ -69,7 +69,7 @@ allPosts = allPosts.sort((a, b) => +b.data.publishedAt - +a.data.publishedAt).sl
         </div>
 
         <div
-                class="flex flex-row justify-center gap-8 mb-12 max-w-5xl mx-auto"
+                class="flex sm:flex-row flex-col justify-center gap-8 mb-12 max-w-5xl mx-auto"
         >
             {
                 allPosts.map((post) => (

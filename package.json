@@ -12,6 +12,7 @@
   "dependencies": {
     "@astrojs/alpinejs": "^0.4.0",
     "@astrojs/check": "^0.8.1",
+    "@astrojs/sitemap": "^3.2.0",
     "@astrojs/tailwind": "^5.1.0",
     "@fontsource/inter": "^5.0.19",
     "@fontsource/lexend": "^5.0.20",

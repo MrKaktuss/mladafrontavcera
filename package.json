@@ -12,6 +12,7 @@
   "dependencies": {
     "@astrojs/alpinejs": "^0.4.0",
     "@astrojs/check": "^0.8.1",
+    "@astrojs/rss": "^4.0.8",
     "@astrojs/sitemap": "^3.2.0",
     "@astrojs/tailwind": "^5.1.0",
     "@fontsource/inter": "^5.0.19",
@@ -24,7 +25,13 @@
     "alpinejs": "^3.14.1",
     "astro": "^4.11.5",
     "gsap": "^3.12.5",
+    "markdown-it": "^14.1.0",
+    "sanitize-html": "^2.13.1",
     "tailwindcss": "^3.4.4",
     "typescript": "^5.5.3"
+  },
+  "devDependencies": {
+    "@types/markdown-it": "^14.1.2",
+    "@types/sanitize-html": "^2.13.0"
   }
 }

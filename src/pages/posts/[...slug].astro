@@ -2,9 +2,9 @@
 import {getCollection} from "astro:content";
 
 import Layout from "../../layouts/Layout.astro";
-import {experimental_AstroContainer} from "astro/container";
-
-const container = await experimental_AstroContainer.create();
+import sanitizeHtml from 'sanitize-html';
+import MarkdownIt from 'markdown-it';
+const parser = new MarkdownIt();
 
 // 1. Generate a new path for every collection entry
 export async function getStaticPaths() {
@@ -18,10 +18,11 @@ export async function getStaticPaths() {
 // 2. For your template, you can get the entry directly from the prop
 const {entry} = Astro.props;
 const {Content} = await entry.render();
-const contentString = await container.renderToString(Content);
 
-// remove all html tags from content
-const content = contentString.replace(/<[^>]*>?/gm, '');
+
+const content = sanitizeHtml(parser.render(entry.body), {
+    allowedTags: []
+});
 ---
 
 <style>
@@ -49,7 +50,7 @@ const content = contentString.replace(/<[^>]*>?/gm, '');
 </style>
 
 
-<Layout title={entry.data.title} description={content}>
+<Layout title={entry.data.title} description={`Napsal ${entry.data.author}, ${entry.data.publishedAt.toLocaleDateString("cs-cz")}. ${content.substring(0, 130)}...`}>
     <link slot="head" rel="canonical" href={"https://mladafrontavcera.cz/posts/" + entry.slug + "/"} />
     <meta slot="head" name="googlebot-news" content="all">
     <script slot="head" type="application/ld+json" set:html={JSON.stringify({
@@ -71,7 +72,7 @@ const content = contentString.replace(/<[^>]*>?/gm, '');
     <div class="max-w-3xl mx-auto">
         <h1 class="text-5xl font-medium tracking-tight" id="article--title">{entry.data.title}</h1>
         <div class="mt-2">
-            Napsal {entry.data.author}, {entry.data.publishedAt.toLocaleDateString()}
+            Napsal {entry.data.author}, {entry.data.publishedAt.toLocaleDateString("cs-cz")}
         </div>
         <hr class="mt-4"/>
 

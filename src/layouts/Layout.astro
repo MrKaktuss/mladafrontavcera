@@ -1,6 +1,6 @@
 ---
 interface Props {
-	title: string;
+	title?: string;
     description?: string;
     additionalMeta?: any;
 }
@@ -55,8 +55,8 @@ import gsap from "gsap";
         // @ts-ignore
         gtag('config', 'G-C8V9D89KLW');
     </script>
-
-    <title>{title} - Mladá Fronta Včera</title>
+    {title && <title>{title} – Mladá Fronta Včera</title>}
+    <title>Mladá Fronta Včera – Školní bulvár – Gymnázium Boženy Němcové</title>
     <style is:global>
         :root {
             scroll-behavior: smooth;

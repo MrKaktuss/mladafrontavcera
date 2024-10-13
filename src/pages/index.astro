@@ -8,7 +8,7 @@ let allPosts = (await getCollection("post"));
 allPosts = allPosts.sort((a, b) => +b.data.publishedAt - +a.data.publishedAt).slice(0, 2);
 ---
 
-<Layout title="Hlavní strana" description="Noviny, který nečte ani naše babička. Studentský školní bulvár z Gymnázia Boženy Němcové, o kterém radši nikdo neslyšel. Vznikl jako legitimní konkurent Gybonovinám.">
+<Layout description="Noviny, který nečte ani naše babička. Studentský školní bulvár z Gymnázia Boženy Němcové, o kterém radši nikdo neslyšel. Vznikl jako legitimní konkurent Gybonovinám.">
     <div class="h-[calc(100vh-68px)]">
         <div
                 class="flex text-left flex-col max-w-6xl mx-auto px-8 py-4 gap-2 justify-center -mt-10 h-full"
@@ -18,7 +18,7 @@ allPosts = allPosts.sort((a, b) => +b.data.publishedAt - +a.data.publishedAt).sl
                 id="hero--title">
                 Noviny,<br>který nečte ani naše babička.
             </h1>
-            <h2 class="text-xl mt-3 text-center z-20">
+            <h2 class="text-xl mt-3 text-center font-base z-20">
                 Školní bulvár, o kterém radši nikdo neslyšel. Vznikl jako
                 legitimní konkurent Gybonovinám.
             </h2>

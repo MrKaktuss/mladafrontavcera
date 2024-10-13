@@ -9,14 +9,14 @@ const allPosts = await getCollection('post');
 allPosts.sort((a, b) => +b.data.publishedAt - +a.data.publishedAt);
 ---
 
-<Layout title="Všechny články">
+<Layout title="Všechny články" description="Všechny příspěvky">
     <div class="flex justify-center">
         <h1 class="text-3xl font-bold">Všechny články</h1>
     </div>
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-12 max-w-5xl mx-auto">
         
         {allPosts.map((post) => (
-            <a href={"/posts/" + post.slug}>
+            <a href={"/posts/" + post.slug + "/"}>
             <Card
             title={post.data.title}
             content={post.body}

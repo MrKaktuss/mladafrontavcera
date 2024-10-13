@@ -3,7 +3,7 @@ title: "Zástupce včerejška, ředitel dneška, poslanec budoucnosti?"
 slug: "zastupce-vcerejska-reditel-dneska-poslanec-budoucnosti"
 author: "Tomáš Baťa"
 publishedAt: 2024-09-19
-image: "/assets/zastupce-vcerejska-reditel-dneska-poslanec-budoucnosti/01.png"
+image: "../../assets/zastupce-vcerejska-reditel-dneska-poslanec-budoucnosti/01.png"
 ---
 
 Gymnázium Boženy Němcové slaví nového Krále, tedy Lehara. Po starém Králi školy se udělala Štěrbina ve vedení, kterou zalepil nový ředitel Mgr. Pavel Lehar, bývalý zástupce GYBONu. Po výběrovém řízení se ujal moci, osedlal křeslo ředitelny a začal plánovat, co se školou v příští pětiletce udělá.

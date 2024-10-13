@@ -3,7 +3,7 @@ title: "Záchody bez cenzury!"
 slug: "zachody-bez-cenzury"
 author: "Julius Fučík"
 publishedAt: 2024-04-09
-image: "https://cdn.akoupelnyatopeni.cz/data/user-content/toilet-g79d169b58_1280.jpg"
+image: "../../assets/zachody-bez-cenzury/01.png"
 ---
 
 Cenzura chlapeckých pisoárů!

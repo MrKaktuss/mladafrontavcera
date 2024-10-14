@@ -1,16 +1,17 @@
 ---
 interface Props {
-	title?: string;
+    title?: string;
     description?: string;
-    additionalMeta?: any;
+    image?: { src: string };
+    canonical?: string;
 }
 
-const { title, description } = Astro.props;
+const {title, description, image, canonical} = Astro.props;
 
 import "@fontsource/montserrat";
 import "@fontsource/noto-sans";
 
-import { getCollection } from "astro:content";
+import {getCollection} from "astro:content";
 
 const allPosts = await getCollection('post');
 
@@ -25,11 +26,12 @@ import gsap from "gsap";
 <html lang="cs">
 <head>
     <meta charset="UTF-8"/>
-    <meta name="description" content={description || ''}/>
 
-    <link rel="sitemap" href="/sitemap-index.xml" />
+
+    <link rel="sitemap" href="/sitemap-index.xml"/>
     <meta name="viewport" content="width=device-width"/>
-    <meta name="keywords" content="Mladá fronta včera, Gymnázium Boženy Němcové, GYBON, školní časopis, Gybonoviny, Hradec Králové, školní bulvár, Mladá fronta dnes, Gybonoviny.cz, gybon.cz, mfv, MF včera" />
+    <meta name="keywords"
+          content="Mladá fronta včera, Gymnázium Boženy Němcové, GYBON, školní časopis, Gybonoviny, Hradec Králové, školní bulvár, Mladá fronta dnes, Gybonoviny.cz, gybon.cz, mfv, MF včera"/>
 
     <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
     <meta name="generator" content={Astro.generator}/>
@@ -57,8 +59,33 @@ import gsap from "gsap";
         // @ts-ignore
         gtag('config', 'G-C8V9D89KLW');
     </script>
-    {title && <title>{title} – Mladá Fronta Včera</title>}
-    <title>Mladá Fronta Včera – Školní noviny – Gymnázium Boženy Němcové</title>
+    <meta name="twitter:card" content="summary_large_image">
+    {title && (
+            <meta name="twitter:title" content={title}>
+            <meta property="og:title" content={title}>
+            <title>{title} – Mladá Fronta Včera</title>)}
+    {!title && (
+            <meta name="twitter:title" content="Mladá Fronta Včera – Školní noviny – Gymnázium Boženy Němcové">
+            <meta property="og:title" content="Mladá Fronta Včera – Školní noviny – Gymnázium Boženy Němcové">
+            <title>Mladá Fronta Včera – Školní noviny – Gymnázium Boženy Němcové</title>
+    )}
+    {image && (
+            <meta name="twitter:image" content={image.src}>
+            <meta property="og:image" content={image.src}>
+    )}
+    {!image && (
+            <meta name="twitter:image" content="https://mladafrontavcera.cz/mfv_logo-wide.png">
+            <meta property="og:image" content="https://mladafrontavcera.cz/mfv_logo-wide.png">
+    )}
+    {description && (
+            <meta name="description" content={description}/>
+            <meta name="twitter:description" content={description}>
+            <meta property="og:description" content={description}>
+    )}
+    {canonical && (
+            <link rel="canonical" href={canonical}>
+            <meta property="og:url" content={canonical}>
+    )}
     <style is:global>
         :root {
             scroll-behavior: smooth;
@@ -161,8 +188,10 @@ import gsap from "gsap";
         </div>
         <div class="flex flex-col max-w-6xl mx-auto py-6 px-6">
             <div class="flex flex-row gap-6 sm:justify-end justify-center mb-8 *:transition-all *:font-montserrat">
-                <a href="https://instagram.com/mladafrontavcera" class="text-black text-base hover:underline">Instagram</a>
-                <a href={`/posts/${newestPost.slug}/`} class="text-black text-base hover:underline">Nejnovější článek</a>
+                <a href="https://instagram.com/mladafrontavcera"
+                   class="text-black text-base hover:underline">Instagram</a>
+                <a href={`/posts/${newestPost.slug}/`} class="text-black text-base hover:underline">Nejnovější
+                    článek</a>
                 <a href="/sitemap.xml" class="text-black text-base hover:underline">Mapa stránky</a>
             </div>
             <div class="flex sm:flex-row flex-col gap-8 justify-between items-center">

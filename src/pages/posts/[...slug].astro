@@ -50,8 +50,7 @@ const content = sanitizeHtml(parser.render(entry.body), {
 </style>
 
 
-<Layout title={entry.data.title} description={`Napsal ${entry.data.author}, ${entry.data.publishedAt.toLocaleDateString("cs-cz")}. ${content.substring(0, 130)}...`}>
-    <link slot="head" rel="canonical" href={"https://mladafrontavcera.cz/posts/" + entry.slug + "/"} />
+<Layout title={entry.data.title} description={`Napsal ${entry.data.author}, ${entry.data.publishedAt.toLocaleDateString("cs-cz")}. ${content.substring(0, 130)}...`} canonical={"https://mladafrontavcera.cz/posts/" + entry.slug + "/"} image={entry.data.image}>
     <meta slot="head" name="googlebot-news" content="all">
     <script slot="head" type="application/ld+json" set:html={JSON.stringify({
         "@context": "https://schema.org",

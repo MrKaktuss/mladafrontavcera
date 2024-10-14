@@ -9,8 +9,7 @@ const allPosts = await getCollection('post');
 allPosts.sort((a, b) => +b.data.publishedAt - +a.data.publishedAt);
 ---
 
-<Layout title="Všechny články" description="Všechny příspěvky">
-    <link slot="head" rel="canonical" href={"https://mladafrontavcera.cz/all/"} />
+<Layout title="Všechny články" description="Všechny příspěvky" canonical="https://mladafrontavcera.cz/all/">
     <div class="flex justify-center">
         <h1 class="text-3xl font-bold">Všechny články</h1>
     </div>

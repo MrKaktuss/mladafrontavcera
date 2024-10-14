@@ -118,7 +118,7 @@ import gsap from "gsap";
 <body class="bg-white">
 <div>
     <div x-data="{ open: false }">
-        <div class="min-h-screen bg-sky-50/25 pb-20">
+        <div class="min-h-screen bg-sky-50/25 pb-20 overflow-hidden">
             <div class="">
                 <nav
                         class="flex flex-row p-1 select-none px-5 justify-center bg-sky-50/75"
@@ -196,7 +196,8 @@ import gsap from "gsap";
             </div>
             <div class="flex sm:flex-row flex-col gap-8 justify-between items-center">
                 <a href="/" class="text-black text-base"><img class="h-16 text-gray-400" src="/mfv_logo-02.svg"></a>
-                <p class="text-gray-400 text-base text-center">
+                <p class="text-gray-400 text-base text-right">
+                    <strong>Časopis studentů Gymnázia Boženy Němcové.</strong><br>
                     Copyright © 2024 redakce Mladé Fronty Včera. Všechna práva vyhrazena.
                 </p>
             </div>

@@ -24,7 +24,7 @@ export async function GET(context) {
             return {
                 title: post.data.title,
                 link: "https://mladafrontavcera.cz/posts/" + post.slug + "/",
-                description: `Napsal ${post.data.author}, ${post.data.publishedAt.toLocaleDateString("cs-cz")}. ${content.substring(0, 130)}...`,
+                description: `Napsal: ${post.data.author}, ${post.data.publishedAt.toLocaleDateString("cs-cz")}. ${content.substring(0, 130)}...`,
                 content: content,
                 pubDate: post.date,
             }

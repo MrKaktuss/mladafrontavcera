@@ -8,12 +8,13 @@ let allPosts = (await getCollection("post"));
 allPosts = allPosts.sort((a, b) => +b.data.publishedAt - +a.data.publishedAt).slice(0, 2);
 ---
 
-<Layout description="Školní bulvár, o kterém radši nikdo neslyšel. Vznikl jako legitimní konkurent Gybonovinám." canonical={"https://mladafrontavcera.cz/"}>
+<Layout description="Školní bulvár, o kterém radši nikdo neslyšel. Vznikl jako legitimní konkurent Gybonovinám."
+        canonical={"https://mladafrontavcera.cz/"}>
     <div class="h-[calc(100vh-68px)]">
         <div
                 class="flex text-left flex-col max-w-6xl mx-auto px-8 py-4 gap-2 justify-center -mt-10 h-full"
         >
-            <span class="absolute font-bold sm:text-[300px] text-[200px] leading-none text-sky-100/50 -mt-20 tracking-wider z-10 font-aktiv-grotesk [overflow-wrap:anywhere]">GYBON</span>
+            <h2 class="absolute font-bold sm:text-[300px] text-[200px] leading-none text-sky-100/50 -mt-20 tracking-wider z-10 font-aktiv-grotesk [overflow-wrap:anywhere]">GYBON</h2>
             <h1 class="sm:text-7xl text-5xl text-left z-20 font-aktiv-grotesk font-medium w-fit mx-auto"
                 id="hero--title">
                 Noviny,<br>který nečte ani naše babička.
@@ -46,7 +47,7 @@ allPosts = allPosts.sort((a, b) => +b.data.publishedAt - +a.data.publishedAt).sl
 
         <div class=" mb-20 font-bold relative ">
             <div class="absolute flex flex-row -top-10 left-1/2 -translate-x-1/2 -z-10">
-                <h3 class="text-[150px] -mt-20 text-center z-10 text-sky-100/75 text-clip block">newest</h3>
+                <span class="text-[150px] -mt-20 text-center z-10 text-sky-100/75 text-clip block">newest</span>
             </div>
             <h2 class="text-center text-5xl z-10">
                 Nejnovější články
@@ -78,7 +79,7 @@ allPosts = allPosts.sort((a, b) => +b.data.publishedAt - +a.data.publishedAt).sl
         </div>
     </div>
 
-    <div class="bg-white">
+    <div class="bg-white mt-24 rounded-2xl">
         <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:justify-between lg:px-8">
             <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Chceš víc?<br>Sleduj nás na
                 instagramu.</h2>
@@ -93,7 +94,6 @@ allPosts = allPosts.sort((a, b) => +b.data.publishedAt - +a.data.publishedAt).sl
             </div>
         </div>
     </div>
-
 </Layout>
 
 <script>

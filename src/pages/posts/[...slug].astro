@@ -51,6 +51,11 @@ const content = sanitizeHtml(parser.render(entry.body), {
 
 
 <Layout title={entry.data.title} description={`Napsal: ${entry.data.author}, ${entry.data.publishedAt.toLocaleDateString("cs-cz")}. ${content.substring(0, 130)}...`} canonical={"https://mladafrontavcera.cz/posts/" + entry.slug + "/"} image={entry.data.image}>
+    <div x-data="{scroll: 0}"
+         x-bind:style="'width: ' + scroll + '%'"
+         x-on:scroll.window="scroll = (window.pageYOffset / (document.body.scrollHeight - window.innerHeight)) * 100"
+         class="h-0.5 bg-sky-200 fixed top-0 left-0">
+    </div>
     <meta slot="head" name="googlebot-news" content="all">
     <script slot="head" type="application/ld+json" set:html={JSON.stringify({
         "@context": "https://schema.org",

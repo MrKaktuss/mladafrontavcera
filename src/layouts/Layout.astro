@@ -59,6 +59,13 @@ import gsap from "gsap";
         // @ts-ignore
         gtag('config', 'G-C8V9D89KLW');
     </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            if (window.location.hostname === "mladafrontavcera.pages.dev") {
+                window.location.href = "https://mladafrontavcera.cz" + window.location.pathname;
+            }
+        });
+    </script>
     <meta name="twitter:card" content="summary_large_image">
     {title && (
             <meta name="twitter:title" content={title + ' – Mladá Fronta Včera'}>

@@ -33,7 +33,13 @@ import gsap from "gsap";
     <meta name="keywords"
           content="Mladá fronta včera, Gymnázium Boženy Němcové, GYBON, školní časopis, Gybonoviny, Hradec Králové, školní bulvár, Mladá fronta dnes, Gybonoviny.cz, gybon.cz, mfv, MF včera"/>
 
-    <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
+    <link rel="icon" type="image/png" href="/favicon-48x48.png" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Mladá Fronta Včera" />
+    <link rel="manifest" href="/site.webmanifest" />
+
     <meta name="generator" content={Astro.generator}/>
     <slot name="head"/>
     <meta name="googlebot" content="all">
@@ -199,7 +205,6 @@ import gsap from "gsap";
                    class="text-black text-base hover:underline">Instagram</a>
                 <a href={`/posts/${newestPost.slug}/`} class="text-black text-base hover:underline">Nejnovější
                     článek</a>
-                <a href="/sitemap.xml" class="text-black text-base hover:underline">Mapa stránky</a>
             </div>
             <div class="flex sm:flex-row flex-col gap-8 justify-between items-center">
                 <a href="/" class="text-black text-base"><img class="h-16 text-gray-400" src="/mfv_logo-02.svg"></a>

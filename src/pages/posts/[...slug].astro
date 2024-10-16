@@ -74,6 +74,7 @@ const content = sanitizeHtml(parser.render(entry.body), {
         ]
     })}/>
     <div class="max-w-3xl mx-auto">
+        <img class="sr-only" src={entry.data.image.src} alt={entry.data.title}>
         <h1 class="text-5xl font-medium tracking-tight" id="article--title">{entry.data.title}</h1>
         <div class="mt-2">
             Napsal: {entry.data.author}, {entry.data.publishedAt.toLocaleDateString("cs-cz")}
